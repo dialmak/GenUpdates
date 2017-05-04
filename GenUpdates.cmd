@@ -12,7 +12,7 @@ call :ParseParam
 set title=%ver% for folder %update_folder%
 title %title%
 pushd "%~dp0%update_folder%" && popd || (echo Ошибка. Папка "%~dp0%update_folder%" не найдена. & goto :Exit)
-dir "%update_folder%" /a:-d /b %sort_list% %sort_time% | findstr /e "%filter_ext%" > "%temp_list%" || (echo Ошибка. Файлы обновлений с расширениями "%filter_ext%" не обнаружены в папке "%~dp0%update_folder%". & goto :Exit)
+dir "%update_folder%" /a:-d /b %sort_list% %sort_time% | findstr /i /e "%filter_ext%" > "%temp_list%" || (echo Ошибка. Файлы обновлений с расширениями "%filter_ext%" не обнаружены в папке "%~dp0%update_folder%". & goto :Exit)
 @echo off>"%filename_list%" || (echo Ошибка. Не получается создать файл "%filename_list%". & goto :Exit)
 for /f "usebackq delims=" %%A in ("%temp_list%") do echo "%%A">>"%filename_list%"
 (
@@ -26,12 +26,18 @@ echo # Для пропуска запуска файла - в начале строки поставьте решетку #.
 echo # По умолчанию используются следующие строки запуска :
 echo #    для .msu файлов - start "" /wait wusa "filename.msu" /quiet /norestart
 echo #    для остальных файлов - start "" /wait "filename.ext" /quiet /norestart
+echo.
 echo # Если требуются другие ключи запуска - напишите их после имени файла обновлений.
+echo # Если требуется запустить любую программу - напишите её в ДВОЙНЫХ КАВЫЧКАХ перед именем файла обновлений.
+echo # Примеры.
+echo #    "IE11-Windows6.1-x64-en-us.exe" /x:"D:/IE11"
+echo #    "expand" -F:* "Windows6.1-KB3059317-x86.msu" "D:/My Updates"   
 echo.
 )>>"%filename_list%"
 echo Список обновлений сформирован.
 echo Для начала редактирования файла с списком обновлений нажмите любую клавишу ...
 pause > nul
+echo+
 start "" "%text_editor%" "%filename_list%"
 ping 127.0.0.1 -n 3 > nul
 echo Для формирования CMD файла обновлений для папки "%update_folder%" нажмите любую клавишу ...
@@ -39,6 +45,7 @@ pause > nul
 call :Creator
 start "" "%text_editor%" "%cmd_name%"
 ping 127.0.0.1 -n 3 > nul
+echo+
 echo Скрипт закончил работу.
 :Exit
 echo+
