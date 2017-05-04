@@ -3,7 +3,7 @@
 pushd "%~dp0"
 setlocal enableextensions enabledelayedexpansion
 color 1f
-set "ver=Generator CMD Scripts Updates v1.2"
+set "ver=Generator CMD Scripts Updates v1.3"
 echo            %ver%
 echo            ----------------------------------
 echo+
