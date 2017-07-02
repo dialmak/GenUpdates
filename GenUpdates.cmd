@@ -177,7 +177,7 @@ echo popd
 echo exit
 echo+
 echo :GetAdminRights
-echo date %%date%% ^>nul 2^>^&1 ^|^| ^(
+echo reg.exe query "HKU\S-1-5-19" ^>nul 2^>^&1 ^|^| ^(
 echo     echo Set UAC = CreateObject^^^("Shell.Application"^^^) ^> "%%temp%%\GetAdmin.vbs"
 echo     echo UAC.ShellExecute "%%~f0", "", "", "runas", 1 ^>^> "%%temp%%\GetAdmin.vbs"
 echo     %%ComSpec%% /u /c type "%%temp%%\GetAdmin.vbs" ^> "%%temp%%\GetAdminUnicode.vbs"
