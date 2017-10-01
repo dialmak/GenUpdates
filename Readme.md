@@ -39,12 +39,13 @@
 <https://support.microsoft.com/en-us/kb/938205>   
 <https://social.technet.microsoft.com/wiki/contents/articles/15260.windows-update-agent-error-codes.aspx>  
 
+<hr>
 ###   Содержимое файла "Settings.ini"   
 
 \# Этот файл "Settings.ini" используется для настроек параметров скрипта 'GenUpdates.cmd'.    
 \# Файл "Settings.ini" должен быть в кодировке Unicode (UCS-2 LE BOM).   
 
-[Settings]
+[Settings]    
 \# Переменная update_folder указывает на относительный путь к папке с обновлениями и расширениями. Для текущей папки оставить пустой.   
 \# Пример: update_folder=Updates 01\x64   
 update_folder=  
