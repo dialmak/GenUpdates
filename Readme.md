@@ -39,7 +39,8 @@
 <https://support.microsoft.com/en-us/kb/938205>   
 <https://social.technet.microsoft.com/wiki/contents/articles/15260.windows-update-agent-error-codes.aspx>  
 
-<hr>
+<hr>   
+
 ###   Содержимое файла "Settings.ini"   
 
 \# Этот файл "Settings.ini" используется для настроек параметров скрипта 'GenUpdates.cmd'.    
