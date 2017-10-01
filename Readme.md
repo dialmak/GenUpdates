@@ -42,7 +42,7 @@
 <hr>   
 
 ###   Содержимое файла "Settings.ini"   
-
+```  
 \# Этот файл "Settings.ini" используется для настроек параметров скрипта 'GenUpdates.cmd'.    
 \# Файл "Settings.ini" должен быть в кодировке Unicode (UCS-2 LE BOM).   
 
@@ -71,6 +71,5 @@ cmd_name=
 \# Переменная filter_ext указывает фильтр расширений файлов для обновлений. Пример: filter_ext=.msu .cab .exe .msi .psf .esd    
 \# Опциональный парамет, по умолчанию используется: filter_ext=.msu .exe .cab .msi    
 filter_ext=   
-    
-
+```
 
