@@ -16,7 +16,7 @@
 
 ###  Быстрый старт
 
-Пример создания скриптов установки обновлений Windows для списка [Рекомендации по обновлению ОС Windows 7 SP1 + KB3125574 от ***TAILORD***](http://forum.ru-board.com/topic.cgi?forum=62&topic=30273&start=18&limit=1&m=1#1)
+Пример создания скриптов установки обновлений Windows для списка [Рекомендации по обновлению ОС Windows 7 SP1 + KB3125574 от ***TAILORD***](http://forum.ru-board.com/topic.cgi?forum=62&topic=30531&start=1&limit=1&m=1#1)
 
 - [x] Сделать папочку "Updates 7" и в ней папки   
       * "Updates 01" (для Списка 1 пункты 1-39)    
