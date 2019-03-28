@@ -9,7 +9,7 @@
 
   Быстрый старт
 -----------------
-Пример создания скриптов установки обновлений Windows для списка http://forum.ru-board.com/topic.cgi?forum=62&topic=30531&start=1&limit=1&m=1#1
+Пример создания скриптов установки обновлений Windows для списка http://forum.ru-board.com/topic.cgi?forum=62&topic=31059&start=1&limit=1&m=1#1
 
 1. Сделать папочку "Updates 7" и в ней папки 
 	"Updates 01" (для Списка 1 пункты 1-39)   
