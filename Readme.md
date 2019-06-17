@@ -2,7 +2,7 @@
  
 # GenUpdates  
 
-Внимание! Скачивать ТОЛЬКО по этой ссылке https://github.com/dialmak/GenUpdates/archive/master.zip
+:ru: Внимание! Скачивать ТОЛЬКО по этой ссылке https://github.com/dialmak/GenUpdates/archive/master.zip
 
 ###  Описание
 
